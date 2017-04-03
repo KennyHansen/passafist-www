@@ -2,7 +2,7 @@ import axios from 'axios'
 import Store from '../store'
 
 let api = axios.create({
-    baseURL: 'http://localhost:3000/api/',
+    baseURL: 'https://pass-a-fist-alpha.herokuapp.com/api/',
     timeout: 30000,
     withCredentials: true
 })

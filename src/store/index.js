@@ -5,13 +5,13 @@ import cardService from '../services/card-service'
 import GameManager from '../services/game-manager'
 
 let api = axios.create({
-    baseURL: 'http://localhost:3000/api/',
+    baseURL: 'https://pass-a-fist-alpha.herokuapp.com/api/',
     timeout: 30000,
     withCredentials: true
 })
 
 
-let client = io.connect('http://localhost:3000/');
+let client = io.connect('https://pass-a-fist-alpha.herokuapp.com/');
 
 client.on('CONNECTED', function (data) {
     console.log(data);
